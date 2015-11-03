@@ -21,6 +21,8 @@ hpc4$Time<-strptime(hpc4$TempTime,format="%Y-%m-%d %H:%M:%S")
 #Draw Plot 3.
 png(file="plot3.png")
 
+par(bg="transparent")
+
 plot(hpc4$Time,hpc4$Sub_metering_1,xlab = "",ylab = "Energy sub metering",
      type = "s",ylim = c(0,38))
 

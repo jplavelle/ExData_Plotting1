@@ -21,7 +21,7 @@ hpc4$Time<-strptime(hpc4$TempTime,format="%Y-%m-%d %H:%M:%S")
 #Draw Plot 4.
 png(file="plot4.png")
 
-par(mfrow=c(2,2))
+par(mfrow=c(2,2),bg="transparent")
 
 #Plot 4-1
 plot(hpc4$Time,hpc4$Global_active_power,xlab = "",ylab = 

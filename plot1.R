@@ -20,6 +20,9 @@ hpc4$Time<-strptime(hpc4$TempTime,format="%Y-%m-%d %H:%M:%S")
 
 #Draw Plot 1.
 png(file="plot1.png")
+
+par(bg="transparent")
+
 hist(hpc4$Global_active_power,xlab = "Global Active Power (kilowatts)",
      main = "Global Active Power",col="red")
 dev.off()
