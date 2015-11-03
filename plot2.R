@@ -1,3 +1,6 @@
+#Load necessary package.
+library(data.table)
+
 #Read in the data.
 hpc<-fread("household_power_consumption.txt",na.strings = "?")
 
@@ -20,6 +23,6 @@ hpc4$Time<-strptime(hpc4$TempTime,format="%Y-%m-%d %H:%M:%S")
 
 #Draw Plot 2.
 png(file="plot2.png")
-plot(hpc4$Time,hpc4$Global_active_power,xlab = "",ylab = "Global Active Power 
-     (kilowatts)",type = "s")
+plot(hpc4$Time,hpc4$Global_active_power,xlab = "",ylab = 
+        "Global Active Power (kilowatts)",type = "s")
 dev.off()

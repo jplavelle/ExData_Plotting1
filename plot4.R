@@ -24,8 +24,8 @@ png(file="plot4.png")
 par(mfrow=c(2,2))
 
 #Plot 4-1
-plot(hpc4$Time,hpc4$Global_active_power,xlab = "",ylab = "Global Active Power 
-     (kilowatts)",type = "s")
+plot(hpc4$Time,hpc4$Global_active_power,xlab = "",ylab = 
+        "Global Active Power (kilowatts)",type = "s")
 
 #Plot 4-2
 plot(hpc4$Time,hpc4$Voltage,type="s",xlab = "datetime",ylab = "Voltage")
@@ -45,7 +45,7 @@ plot(hpc4$Time,hpc4$Sub_metering_3,xlab = "",ylab = "Energy sub metering",
      type = "s",col="blue",ylim=c(0,38))
 
 legend("topright",lty=1,col=c("black","red","blue"),
-       legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+       legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty = "n")
 
 #Plot 4-4
 plot(hpc4$Time,hpc4$Global_reactive_power,type="s",xlab = "datetime",
